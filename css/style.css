@@ -89,6 +89,22 @@ img{
     -ms-transform: translateY(-3px);
     -o-transform: translateY(-3px);
 }
+.primaryButton::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
 .secondryButton{
     font-size: 1.6rem;
     color: var(--dark-green);
@@ -97,6 +113,7 @@ img{
     text-decoration: none;
     border-bottom: 0.0625rem solid var(--dark-green);
     padding: 0.1875rem;
+    cursor: pointer;
     transition: all .2s;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
