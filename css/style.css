@@ -81,9 +81,18 @@ img{
     -ms-transition: all .2s;
     -o-transition: all .2s;
 }
+.primaryButton:hover{
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 20%);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
 .secondryButton{
     font-size: 1.6rem;
     color: var(--dark-green);
+    background: transparent;
     display: inline-block;
     text-decoration: none;
     border-bottom: 0.0625rem solid var(--dark-green);
@@ -94,4 +103,15 @@ img{
     -ms-transition: all .2s;
     -o-transition: all .2s;
 }
+.secondryButton:hover{
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 15%);
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+}
+
 /***** End general *****/
