@@ -6,7 +6,7 @@
     --transparent-white:#ffffff99;
     --gradient-green:linear-gradient(to right, #7ed56f, #28b485);
     --dark-green:#55c57a;
-    --lato-font:font-family: 'Lato', sans-serif;
+    --lato-font:'Lato', sans-serif;
 }
 *{
     padding: 0;
@@ -15,6 +15,8 @@
 }
 body{
     font-family: var(--lato-font);
+    color: var(--dark-text);
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -25,6 +27,11 @@ li{
 img{
     width: 100%;
     display: block;
+}
+@media (min-width:768px) {
+    body{
+        padding: 3rem;
+    }
 }
 /***** general *****/
 .container {
@@ -81,13 +88,16 @@ img{
     -ms-transition: all .2s;
     -o-transition: all .2s;
 }
-.primaryButton:hover{
+.primaryButton:hover,
+.primaryButton:focus {
     box-shadow: 0 1rem 2rem rgb(0 0 0 / 20%);
     transform: translateY(-3px);
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     -o-transform: translateY(-3px);
+    outline-offset: .6rem;
+    outline: 5px solid var(--dark-green);
 }
 .primaryButton::after {
     content: "";
@@ -120,7 +130,8 @@ img{
     -ms-transition: all .2s;
     -o-transition: all .2s;
 }
-.secondryButton:hover{
+.secondryButton:hover,
+.secondryButton:focus{
     background-color: #55c57a;
     color: #fff;
     box-shadow: 0 1rem 2rem rgb(0 0 0 / 15%);
