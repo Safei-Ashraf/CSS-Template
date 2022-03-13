@@ -149,7 +149,9 @@ img{
     -ms-transform: translateY(-2px);
     -o-transform: translateY(-2px);
 }
-
+::selection {
+    background: var(--dark-green);
+    }
 /***** End general *****/
 /***** navbar *****/
 .nav .flexContainer{
