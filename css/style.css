@@ -96,24 +96,19 @@ img{
     -moz-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     -o-transform: translateY(-3px);
-    outline-offset: .6rem;
-    outline: 5px solid var(--dark-green);
+    animation: pulseWhite .8s ease-out backwards;
+    -webkit-animation: pulseWhite .8s ease-out backwards;
 }
-.primaryButton::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
+@keyframes pulseWhite {
+	0% {
+		box-shadow: 0 0 0 0 rgba(248, 248, 248, 0.7);
+    }
+	70% {
+		box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+	100% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }
 .secondryButton{
     font-size: 1.6rem;
@@ -129,6 +124,19 @@ img{
     -moz-transition: all .2s;
     -ms-transition: all .2s;
     -o-transition: all .2s;
+    animation: pulseGreen .8s ease-out backwards;
+    -webkit-animation: pulseGreen .8s ease-out backwards;
+}
+@keyframes pulseGreen {
+	0% {
+		box-shadow: 0 0 0 0 rgb(85, 197, 122,0.7);
+	}
+	70% {
+		box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
 .secondryButton:hover,
 .secondryButton:focus{
