@@ -258,11 +258,11 @@ img{
     justify-content: center;
     align-items: center;
     clip-path: circle(25px at calc(100% - 45px) 45px);
-    transition: opacity 0.2s ease-in-out;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -ms-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
+    transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -ms-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 @media (min-width:768px) {
     .nav .flexContainer{
@@ -283,7 +283,7 @@ img{
         -moz-transform: translateY(33%);
         -ms-transform: translateY(33%);
         -o-transform: translateY(33%);
-}
+    }
     .navLogo{
         margin-top: 0;
         width: 8%;
