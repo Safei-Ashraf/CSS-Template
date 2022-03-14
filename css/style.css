@@ -50,7 +50,7 @@ img{
     padding: 15rem 0;
 }
 .title{
-    font-size: 3.5rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
@@ -117,7 +117,7 @@ img{
     }
 }
 .secondryButton{
-    font-size: 1.6rem;
+    font-size: 0.8rem;
     color: var(--dark-green);
     background: transparent;
     display: inline-block;
@@ -155,5 +155,38 @@ img{
     -ms-transform: translateY(-2px);
     -o-transform: translateY(-2px);
 }
-
+@media (min-width:768px) {
+    .title{
+        font-size: 3.5rem;
+    }
+    .secondryButton{
+        font-size:  1.6rem;
+    }
+}
 /***** End general *****/
+.tour{
+    background: var(--footer-text);
+    padding: 15rem 0;
+}
+.tour .title{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.tourDesc{
+    padding: 0 1rem;
+    text-align: left;
+}
+.tourDesc h4{
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+.tourDesc p{
+    margin-bottom: 1.6rem;
+    font-size: 0.8rem;
+}
+@media (min-width:768px) {
+    .tourDesc{
+        width: 50%;
+        padding: 0;
+    }
+}
