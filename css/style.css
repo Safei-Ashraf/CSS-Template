@@ -157,7 +157,7 @@ img{
 }
 @media (min-width:768px) {
     .title{
-        font-size: 3.5rem;
+        font-size: 2.1875rem;
     }
     .secondryButton{
         font-size:  1.6rem;
@@ -170,11 +170,14 @@ img{
     padding: 15rem 0;
 }
 .tour .flexContainer{
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .tour .title{
     margin-bottom: 3rem;
-    text-align: center;
 }
 .tourDesc{
     padding: 0 1rem;
@@ -223,7 +226,9 @@ img{
 }
 @media (min-width:768px) {
     .tour .flexContainer{
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
     }
     .tourDesc{
         width: 48%;
@@ -243,7 +248,7 @@ img{
         -moz-transform: scale(1.4);
         -ms-transform: scale(1.4);
         -o-transform: scale(1.4);
-}
+    }
     .centerImg{
         transform: scale(1.6);
         -webkit-transform: scale(1.6);
