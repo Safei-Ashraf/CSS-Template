@@ -164,6 +164,7 @@ img{
     }
 }
 /***** End general *****/
+/***** tour *****/
 .tour{
     background: var(--footer-text);
     padding: 15rem 0;
@@ -190,3 +191,4 @@ img{
         padding: 0;
     }
 }
+/***** End tour *****/
