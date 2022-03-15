@@ -282,11 +282,11 @@ img{
     font-size: 0.75rem;
     margin-bottom: 4rem;
     text-align: center;
-    transition: all ease-out .2s;
-    -webkit-transition: all ease-out .2s;
-    -moz-transition: all ease-out .2s;
-    -ms-transition: all ease-out .2s;
-    -o-transition: all ease-out .2s;
+    transition: transform .3s;
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
 }
 .featureCard:hover{
     transform: translateY(-1.5rem) scale(1.03);
@@ -321,7 +321,6 @@ img{
         text-align: center;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
-        transition: transform .3s;
     }
     .featureTitle{
         font-size: 1.2rem;
