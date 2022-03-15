@@ -15,43 +15,91 @@
 </head>
 
 <body>
-        <!-- ========== Start navbar ========== -->
-        <header class="nav">
-            <section class="container flexContainer">
-                <figure class="navLogo">
-                    <img src="./assets/img/logo-white.png" alt="logo">
-                </figure>
-                <label for="active" class="toggleButton"  id="openToggle">
-                    <i onclick="changeIcon(this)" class='bx bx-menu'></i>
-                </label>
-                <input type="checkbox" name="active" id="active">
-                <nav id="navOverlay">
-                    <ul class="navLinks">
-                        <li><a href="#">01 ABOUT NATOUS</a></li>
-                        <li><a href="#">02 YOUR BENFITS</a></li>
-                        <li><a href="#">03 POPULAR TOURS</a></li>
-                        <li><a href="#">04 STORIES</a></li>
-                        <li><a href="#">05 BOOK NOW</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-        <!-- ========== End navbar ========== -->
-        <main>
-            <!-- ========== Start hero ========== -->
-            <section class="hero">
-                <div class="container flexContainer">
-                    <h2>OUTDOORS</h2>
-                        <p>
-                            IS WHERE LIFE HAPPENS
-                        </p>
-                        <button class="primaryButton">
-                            discover our tours
-                        </button>
+    <!-- ========== Start navbar ========== -->
+    <header class="nav">
+        <section class="container flexContainer">
+            <figure class="navLogo">
+                <img src="./assets/img/logo-white.png" alt="logo">
+            </figure>
+            <label for="active" class="toggleButton" id="openToggle">
+                <i onclick="changeIcon(this)" class='bx bx-menu'></i>
+            </label>
+            <input type="checkbox" name="active" id="active">
+            <nav id="navOverlay">
+                <ul class="navLinks">
+                    <li><a href="#">01 ABOUT NATOUS</a></li>
+                    <li><a href="#">02 YOUR BENFITS</a></li>
+                    <li><a href="#">03 POPULAR TOURS</a></li>
+                    <li><a href="#">04 STORIES</a></li>
+                    <li><a href="#">05 BOOK NOW</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- ========== End navbar ========== -->
+    <main>
+        <!-- ========== Start hero ========== -->
+        <section class="hero">
+            <div class="container flexContainer">
+                <h2>OUTDOORS</h2>
+                <p>
+                    IS WHERE LIFE HAPPENS
+                </p>
+                <button class="primaryButton">
+                    discover our tours
+                </button>
+            </div>
+        </section>
+        <!-- ========== End hero ========== -->
+        <section class="popular">
+            <div class="container flexContainer">
+                <div class="popularWrapper">
+                    <!-- start  -->
+                    <div class="popularCardYellow">
+                        <header class="popularHeaderYellow">
+                            <span>the sea explorer</span>
+                        </header>
+                        <ul>
+                            <li>3 day tours</li>
+                            <li>up to 3 people</li>
+                            <li>2 tour guides</li>
+                            <li>sleep in cozy hotels</li>
+                            <li>Difficulty: easy</li>
+                        </ul>
+                    </div>
+                    <!-- end  -->
+                    <!-- start  -->
+                    <div class="popularCardGreen">
+                        <header class="popularHeaderGreen">
+                            <span>the forest hiker</span>
+                        </header>
+                        <ul>
+                            <li>7 day tours</li>
+                            <li>up to 40 people</li>
+                            <li>6 tour guides</li>
+                            <li>sleep in provided tents</li>
+                            <li>Difficulty: medium</li>
+                        </ul>
+                    </div>
+                    <!-- end  -->
+                    <!-- start  -->
+                    <div class="popularCardBlue">
+                        <header class="popularHeaderBlue">
+                            <span>the snow adventure</span>
+                        </header>
+                        <ul>
+                            <li>5 day tours</li>
+                            <li>up to 15 people</li>
+                            <li>3 tour guides</li>
+                            <li>sleep in provided tents</li>
+                            <li>Difficulty: hard</li>
+                        </ul>
+                    </div>
+                    <!-- end  -->
                 </div>
-            </section>
-            <!-- ========== End hero ========== -->
-        </main>
+            </div>
+        </section>
+    </main>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="./main.js"></script>
 </body>
