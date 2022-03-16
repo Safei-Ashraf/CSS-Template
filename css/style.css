@@ -448,4 +448,26 @@ img{
     font-size: 0.75rem;
     padding: 1rem 1.5rem;
 }
+@media (min-width:768px) {
+    .popularCard{
+        width: 70%;
+    }
+}
+@media (min-width:1024px) {
+    .popularWrapper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .popularCard{
+        width: 23.5%;
+    }
+    .popularFooter{
+        display: none;
+    }
+    .popular ul{
+        width: 80%;
+        margin: 0 auto;
+        padding: 1.875rem 0
+    }
+}
 /***** End popular *****/
