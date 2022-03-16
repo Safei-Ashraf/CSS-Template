@@ -15,43 +15,114 @@
 </head>
 
 <body>
-        <!-- ========== Start navbar ========== -->
-        <header class="nav">
-            <section class="container flexContainer">
-                <figure class="navLogo">
-                    <img src="./assets/img/logo-white.png" alt="logo">
-                </figure>
-                <label for="active" class="toggleButton"  id="openToggle">
-                    <i onclick="changeIcon(this)" class='bx bx-menu'></i>
-                </label>
-                <input type="checkbox" name="active" id="active">
-                <nav id="navOverlay">
-                    <ul class="navLinks">
-                        <li><a href="#">01 ABOUT NATOUS</a></li>
-                        <li><a href="#">02 YOUR BENFITS</a></li>
-                        <li><a href="#">03 POPULAR TOURS</a></li>
-                        <li><a href="#">04 STORIES</a></li>
-                        <li><a href="#">05 BOOK NOW</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-        <!-- ========== End navbar ========== -->
-        <main>
-            <!-- ========== Start hero ========== -->
-            <section class="hero">
-                <div class="container flexContainer">
-                    <h2>OUTDOORS</h2>
-                        <p>
-                            IS WHERE LIFE HAPPENS
-                        </p>
-                        <button class="primaryButton">
-                            discover our tours
-                        </button>
+    <!-- ========== Start navbar ========== -->
+    <header class="nav">
+        <section class="container flexContainer">
+            <figure class="navLogo">
+                <img src="./assets/img/logo-white.png" alt="logo">
+            </figure>
+            <label for="active" class="toggleButton" id="openToggle">
+                <i onclick="changeIcon(this)" class='bx bx-menu'></i>
+            </label>
+            <input type="checkbox" name="active" id="active">
+            <nav id="navOverlay">
+                <ul class="navLinks">
+                    <li><a href="#">01 ABOUT NATOUS</a></li>
+                    <li><a href="#">02 YOUR BENFITS</a></li>
+                    <li><a href="#">03 POPULAR TOURS</a></li>
+                    <li><a href="#">04 STORIES</a></li>
+                    <li><a href="#">05 BOOK NOW</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- ========== End navbar ========== -->
+    <main>
+        <!-- ========== Start hero ========== -->
+        <section class="hero">
+            <div class="container flexContainer">
+                <h2>OUTDOORS</h2>
+                <p>
+                    IS WHERE LIFE HAPPENS
+                </p>
+                <button class="primaryButton">
+                    discover our tours
+                </button>
+            </div>
+        </section>
+        <!-- ========== End hero ========== -->
+        <!-- ========== Start tour ========== -->
+        <section class="tour">
+            <div class="container flexContainer">
+                <h2 class="title">EXCITING TOURS FOR ADVENTUROUS PEOPLE</h2>
+                <div class="tourDesc">
+                    <h4>YOU'RE GOING TO FALL IN LOVE WITH NATURE</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
+                        libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                    </p>
+                    <h4>LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum
+                        nam.
+                    </p>
+                    <a href="#" class="secondryButton">Learn more <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
-            </section>
-            <!-- ========== End hero ========== -->
-        </main>
+                <div class="tourImages">
+                    <figure class="tourImg">
+                        <img src="./assets/img/nat-1-large.jpg" alt="nature">
+                    </figure>
+                    <figure class="tourImg centerImg">
+                        <img src="./assets/img/nat-2-large.jpg" alt="nature">
+                    </figure>
+                    <figure class="tourImg">
+                        <img src="./assets/img/nat-3-large.jpg" alt="nature">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End tour ========== -->
+        <!-- ========== Start features ========== -->
+        <section class="features">
+            <div class="container flexContainer">
+                <div class="featuresWrapper">
+                    <!-- strat -->
+                    <div class="featureCard">
+                        <span class="featureIcon"> <i class='bx bx-globe'></i> </span>
+                        <h4 class="featureTitle">EXPLORE THE WORLD</h4>
+                        <p class="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum
+                            sapiente aspernatur.</p>
+                    </div>
+                    <!-- end -->
+                    <!-- start  -->
+                    <div class="featureCard">
+                        <span class="featureIcon"> <i class='bx bx-compass'></i> </span>
+                        <h4 class="featureTitle">MEET NATURE</h4>
+                        <p class="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum
+                            sapiente aspernatur.</p>
+                    </div>
+                    <!-- end -->
+                    <!-- start  -->
+                    <div class="featureCard">
+                        <span class="featureIcon"> <i class='bx bx-map-alt'></i></span>
+                        <h4 class="featureTitle">FIND YOUR WAY</h4>
+                        <p class="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum
+                            sapiente aspernatur.</p>
+                    </div>
+                    <!-- end -->
+                    <!-- start  -->
+                    <div class="featureCard">
+                        <span class="featureIcon"> <i class='bx bx-heart'></i> </span>
+                        <h4 class="featureTitle">LIVE A HEALTHIER LIFE</h4>
+                        <p class="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum
+                            sapiente aspernatur.</p>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </section>
+        <!-- ========== End features ========== -->
+    </main>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="./main.js"></script>
 </body>
