@@ -540,3 +540,38 @@ img{
     }
 }
 /***** End features *****/
+/***** footer *****/
+footer{
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 4rem 0;
+}
+footer figure{
+    margin: 3rem 0;
+    width: 8rem;
+}
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.footerLinks{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid var(--dark-text);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.footerLinks a{
+    color: var(--white-bg);
+    padding: 0 5px;
+}
+.footerCopyWrite{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--dark-text);
+    margin-top: 3rem;
+}
+/***** End footer *****/
