@@ -540,6 +540,12 @@ img{
     }
 }
 /***** End features *****/
+/***** contact *****/
+.contact{
+    background: linear-gradient(to right bottom, #7ed56f, #28b485);
+    padding: 15rem 0;
+}
+/***** End contact *****/
 /***** footer *****/
 footer{
     background-color: var(--footer-bg);
