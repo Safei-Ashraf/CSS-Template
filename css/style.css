@@ -505,7 +505,6 @@ img{
     .popularFooter h4, 
     .popularFooter a{
         transform: rotateY(180deg);
-
     }
     .popularCard:hover{
         visibility: hidden;
