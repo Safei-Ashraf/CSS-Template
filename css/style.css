@@ -561,8 +561,8 @@ img{
 .reviewCardImg figcaption{
     display: none;
     position: absolute;
-    top: 53%;
-    right: 36%;
+    top: 40%;
+    right: 26%;
     color: var(--white-bg);
     transition: all .8s;
     -webkit-transition: all .8s;
