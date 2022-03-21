@@ -647,9 +647,11 @@ footer figure{
     justify-content: center;
     margin-top: 3rem;
 }
+.footerLinks li{
+    padding: 0.9375rem 0.3125rem;
+}
 .footerLinks a{
     color: var(--white-bg);
-    padding: 15px 5px;
 }
 .footerCopyWrite{
     width: 100%;
@@ -677,6 +679,7 @@ footer figure{
         -moz-transform: rotate(45deg) scale(1.3);
         -ms-transform: rotate(45deg) scale(1.3);
         -o-transform: rotate(45deg) scale(1.3);
-}
+        padding: 0.9375rem;
+    }
 }
 /***** End footer *****/
