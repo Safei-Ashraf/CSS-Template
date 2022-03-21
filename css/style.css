@@ -57,6 +57,7 @@ img{
     background-color: var(--dark-green);
     background-image:var(--gradient-green);
     background-size: 100%;
+    margin-bottom: 4rem;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -540,3 +541,248 @@ img{
     }
 }
 /***** End features *****/
+/***** popular *****/
+.popular{
+    background:var(--footer-text) ;
+    padding: 15rem 0 5rem 0;
+}
+.popularWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+.popularCard{
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.popularCard li{
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.popularHeader{
+    height: 13rem;
+    position: relative;
+}
+.popularHeader span{
+    color: var(--white-bg);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    width: 60%;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+.popularHeaderYellow{
+    background: linear-gradient(to right bottom, #ffb900c9, #ff773078),url(../assets/img/nat-5.jpg) no-repeat;
+    background-size: cover;
+}
+.popularCardYellow .popularFooter,
+.popularHeaderYellow span{
+    background-image:  linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.popularHeaderGreen{
+    background: linear-gradient(to right bottom,#7ed56f82, #28b48575),url(../assets/img/nat-6.jpg) no-repeat;
+    background-size: cover;
+}
+.popularCardGreen .popularFooter,
+.popularHeaderGreen span{
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.popularHeaderBlue{
+    background:linear-gradient(to right bottom,  #2998ff70, #5643fa4f),url(../assets/img/nat-7.jpg) no-repeat;
+    background-size: cover;
+}
+.popularCardBlue .popularFooter,
+.popularHeaderBlue span{
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.popularFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 3rem 3rem 3rem;
+    color: var(--white-bg);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+.popularFooter h4{
+    font-weight: 100;
+    font-size: 2rem;
+    padding: 20px 0;
+}
+.popularCard .primaryButton{
+    background: var(--white-bg);
+    color: var(--dark-text);
+    font-size: 0.75rem;
+    padding: 1rem 1.5rem;
+}
+.popular .primaryButton{
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+@media (min-width:768px) {
+    .popularCard{
+        width: 70%;
+    }
+}
+@media (min-width:1024px) {
+    .popularWrapper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .popularCard{
+        width: 23.5%;
+        position: relative;
+    }
+    .popular ul{
+        width: 80%;
+        margin: 0 auto;
+        padding: 1.875rem 0
+    }
+    .popularFooter {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: none;
+        visibility: hidden;
+        transition: transform 1s ease;
+        -webkit-transition: transform 1s ease;
+        -moz-transition: transform 1s ease;
+        -ms-transition: transform 1s ease;
+        -o-transition: transform 1s ease;
+    }
+    .popularCard:hover .popularFooter{
+        visibility: visible;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+    .popularFooter span,
+    .popularFooter h4, 
+    .popularFooter a{
+        transform: rotateY(180deg);
+    }
+    .popularCard:hover{
+        visibility: hidden;
+    }
+}
+/***** End popular *****/
+/***** reviews *****/
+.reviews{
+    padding: 10rem 0;
+    text-align: center;
+    position: relative;
+}
+.reviewsVideo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.videoBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+}
+.reviewCard {
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.reviewCardImg{
+    position: relative;
+}
+.reviewCardImg img{
+    width: 33%; 
+    height: 117px;
+    width:  117px;
+    float: left;
+    margin-right:2rem; 
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+}
+.reviewCardImg figcaption{
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 26%;
+    color: var(--white-bg);
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+}
+.reviewCardInfo h5{
+    margin-bottom: 1rem;
+}
+.reviewCardInfo{
+    text-align: left;
+}
+@media (min-width:1024px) {
+    .reviewCard{
+        display: flex;
+        align-items: center;
+        padding: 4rem;
+    }
+    .reviewCards{
+        width: 75%;
+        margin: 0 auto;
+        border-radius: 3px;
+        padding: 2rem;
+        padding-left: 4rem;
+        -webkit-transform: skewX(-12deg);
+        transform: skewX(-12deg);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    .reviewCardInfo, .reviewCardImg{
+        transform: skewX(12deg);
+        -webkit-transform: skewX(12deg);
+        -moz-transform: skewX(12deg);
+        -ms-transform: skewX(12deg);
+        -o-transform: skewX(12deg);
+    }
+    .reviewCard:hover .reviewCardImg img{
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+    .reviewCard:hover .reviewCardImg figcaption{
+        display: block;
+    }
+    .reviewCardImg img{
+        width: 130px;
+        height: 130px;
+    }
+}
+/***** End reviews *****/
